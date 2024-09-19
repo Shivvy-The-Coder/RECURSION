@@ -1,20 +1,19 @@
 public class subsequence_of_String {
     
     public static void main(String[] args) {
-        
-        String s="ABCD";
-        subsequence(s,"");
+        String s="SHIVAM";
+        printSubsequence(s,"");
     }
-    public static void subsequence(String s, String Ans)
-        {
-            if(s.length()==0)
-                {
-                    System.out.print(Ans+" ");
-                    return;
-                }
-                    char ch=s.charAt(0);
-                    s=s.substring(1);
-                    subsequence(s, Ans);
-                    subsequence(s, Ans+ch);
+    public static void printSubsequence(String ques ,String ans)
+    {
+        if(ques.length()==1)
+            {
+                System.out.print(ans+" ");
+                return;
             }
+        char ch=ques.charAt(0);
+        String s=ques.substring(1);
+        printSubsequence(s, ans);
+        printSubsequence(s, ans+ch);
+    }
 }
