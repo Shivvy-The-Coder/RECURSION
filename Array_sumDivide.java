@@ -14,7 +14,7 @@ public class Array_sumDivide {
                     }
               System.out.println(count_divison(arr,0,arr.length-1));  
             }
-
+            sc.close();
     }
       public static int count_divison(int []arr,int si,int li)
         {
