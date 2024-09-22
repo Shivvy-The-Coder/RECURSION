@@ -9,6 +9,7 @@ public class TowerOfHanoi
         Scanner sc = new Scanner(System.in);
         int n=sc.nextInt();
         TOH(n,src,hlp,des);
+        sc.close();
     }   
     public static void TOH(int n, String src, String hlp, String des)
         {
